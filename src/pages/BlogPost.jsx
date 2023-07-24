@@ -1,13 +1,10 @@
 import React from "react";
-import postTrip from "../data";
+import posts from "../data";
 import { useParams } from "react-router-dom";
 
 const BlogPost = () => {
   const { id } = useParams();
-  const postItem = postTrip.find((item) => item.id == id);
-
-  console.log(id);
-
+  const postItem = posts.find((item) => item.id == id);
   return (
     <article className="container">
       <div className="row">

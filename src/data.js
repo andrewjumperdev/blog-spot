@@ -1,4 +1,4 @@
-const postTrip = [
+const posts = [
   {
     id: 1,
     img: "./thumbnail.png",
@@ -399,4 +399,4 @@ const postTrip = [
   
 ];
 
-export default postTrip;
+export default posts;
