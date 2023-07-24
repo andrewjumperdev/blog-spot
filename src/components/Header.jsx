@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header = ({width, logo}) => {
+const Header = ({ width, logo }) => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-transparent">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={logo} alt="logo" width={`${width}rem`} />
           </a>
           <button
@@ -22,8 +22,28 @@ const Header = ({width, logo}) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a
+                  className={`nav-link ${(active) => (active ? "active" : "")}`}
+                  aria-current="page"
+                  href="/"
+                >
                   Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link ${(active) => (active ? "active" : "")}`}
+                  href="/about"
+                >
+                  Acerca de
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link ${(active) => (active ? "active" : "")}`}
+                  href="/contact"
+                >
+                  Contacto
                 </a>
               </li>
             </ul>

@@ -1,6 +1,5 @@
 import React from "react";
 import CardMedia from "../components/CardMedia";
-import SingleCard from "../components/SingleCard";
 import postTrip from "../data";
 
 const Home = () => {
@@ -8,18 +7,10 @@ const Home = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col">
-            <CardMedia data={postTrip} width={80} />
-          </div>
-        </div>
-      </div>
-
-      <div className="container mt-5">
-        <div className="row">
-          <div className="col card-group">
-            <SingleCard data={postTrip} width={28} />
-            <SingleCard data={postTrip} width={28} />
-            <SingleCard data={postTrip} width={28} />
+          <div className="d-flex justify-content-between align-content-start flex-wrap">
+            {postTrip.map((item) => (
+              <CardMedia key={item.id} data={item} width={18} />
+            ))}
           </div>
         </div>
       </div>

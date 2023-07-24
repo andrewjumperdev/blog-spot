@@ -1,23 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const LastCardUpload = ({ data, width }) => {
-  console.log(data);
+const Card = ({ data, width }) => {
   return (
-    <div className="card mb-3" style={{width:`${width}rem`}} >
-      <div class="row g-0">
-        <div class="col-4">
-          <img src="./header-img.jpg" className="img-fluid" alt="..." />
+    <div className="card m-3 mx-auto" style={{ width: `${width}rem` }}>
+      <div className="row d-flex flex-column flex-wrap">
+        <div className="col">
+          <img src={data.img} className="img-fluid" alt="Front Page" />
         </div>
-        <div class="col-8">
-          <div class="card-body">
+        <div className="col">
+          <div className="card-body">
             <p>
-              <strong>Front-End </strong>. 1 Hour Ago
+              <strong>{data.subject}</strong>
             </p>
-            <h5 class="card-title">{data.title}</h5>
-            <p class="card-text">{data.content}</p>
-            <p class="card-text">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </p>
+            <h5 className="card-title">{data.title}</h5>
+            <p className="card-text collapse">{data.content}</p>
+            <Link to={`/blog-post/${data.id}`}>leer mas</Link>
           </div>
         </div>
       </div>
@@ -25,4 +23,4 @@ const LastCardUpload = ({ data, width }) => {
   );
 };
 
-export default LastCardUpload;
+export default Card;
