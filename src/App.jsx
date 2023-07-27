@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Layout from "./layout/Layout";
 import Home from "./pages/Home";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
 import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 import Contact from "./pages/Contact";

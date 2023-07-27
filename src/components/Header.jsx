@@ -1,6 +1,7 @@
 import React from "react";
+import ThemeSwitcher from "./ToggleButton";
 
-const Header = ({ width, logo, isNightMode, toggleNightMode }) => {
+const Header = ({ width, logo }) => {
   return (
     <nav className="navbar navbar-expand-lg bg-transparent">
       <div className="container-fluid">
@@ -57,9 +58,7 @@ const Header = ({ width, logo, isNightMode, toggleNightMode }) => {
             </li>
           </ul>
         </div>
-        <button className="btn" onClick={toggleNightMode}>
-          {isNightMode ? <i className ="bi bi-brightness-low-fill"></i> : <i className="bi bi-brightness-low"></i>}
-        </button>
+        <ThemeSwitcher />
       </div>
     </nav>
   );

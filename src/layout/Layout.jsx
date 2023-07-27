@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <ThemeProvider>
       <div className={(isNightMode ? "night-mode" : "day-mode")}>
         <Header
           logo={logo}
@@ -24,7 +23,6 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Footer logo={logo} width={80} />
       </div>
-    </ThemeProvider>
   );
 };
 

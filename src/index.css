@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.day-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #000; /* Color de enlaces para el tema de día */
+  /* Add more CSS variables for other styles you want to change */
+}
+
+.night-theme {
+  --background-color: #222222;
+  --text-color: #ffffff;
+  --link-color: #fff; /* Color de enlaces para el tema de noche */
+  /* Add more CSS variables for other styles you want to change */
+}
+
+body {
+  background-color: var(--background-color)!important;
+  color: var(--text-color)!important;
+}
+
+a {
+  color: var(--link-color)!important; /* Aplicar color de enlaces según el tema */
+}
+
+footer {
+  color: var(--link-color)!important; /* Aplicar color de enlaces según el tema */
+}
