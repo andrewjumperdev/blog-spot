@@ -2,16 +2,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-4 mb-3">
+    <div className="container "> 
+      <div className="row mb-5 align-items-center">
+        <div className="col-md-12 col-lg-6 px-5 d-flex justify-content-center">
           <img
             src="./Foto_Andrew.png"
-            class="rounded-5 img-fluid"
+            className="rounded-5 w-75"
             alt="Profile"
           />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-12 col-lg-6">
           <p className="mt-5">
             <span>¡Hola! Soy Andrew</span> un apasionado del mundo de la
             tecnología y el desarrollo. Mi trayectoria comenzó cuando niño me
@@ -34,10 +34,6 @@ const About = () => {
             Server. Esto me ha permitido diseñar y optimizar estructuras de
             datos, realizar consultas complejas y asegurar una gestión eficiente
             de la información en proyectos diversos. <br />
-          </p>
-        </div>
-        <div className="col mb-5">
-          <p>
             La pasión por compartir mis conocimientos y ayudar a otros a crecer
             en el mundo del desarrollo me ha llevado a crear este blog. Mi
             objetivo es ofrecer tutoriales, guías y consejos prácticos para que
@@ -51,16 +47,16 @@ const About = () => {
       </div>
       <div className="row">
         <div className="col border-top border-buttom p-4 text-center">
-          <i class="bi bi-check-circle"></i>
+          <i className="bi bi-check-circle"></i>
           <p>
             Si buscas mejorar la experiencia de usuario, crear aplicaciones
             eficientes y destacar en el mundo digital, no dudes en contactarme.
             Con habilidades sólidas en el stack MERN, experiencia en JavaScript
             y Python, estoy listo para colaborar en proyectos ambiciosos y crear
-            soluciones innovadoras. ¡Contáctame ahora y llevemos tus ideas al
+            soluciones innovadoras.<br/> ¡Contáctame ahora y llevemos tus ideas al
             siguiente nivel!
           </p>
-          <a href="/contact" class="btn btn-primary">
+          <a href="/contact" className="btn btn-primary">
             Contacto
           </a>
         </div>
