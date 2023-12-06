@@ -1,8 +1,8 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const Footer = ({ logo, width }) => {
   return (
-    <footer className=" container d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 border-top">
+    <footer id="theme-colors" className=" container d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 border-top">
       <p className="col-md-4 mb-0 text-body-secondary">© 2023 Andrew Alfaro</p>
 
       <a
@@ -32,5 +32,12 @@ const Footer = ({ logo, width }) => {
     </footer>
   );
 };
+
+
+Footer.propTypes = {
+  logo: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+};
+
 
 export default Footer;

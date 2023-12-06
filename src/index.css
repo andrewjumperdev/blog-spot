@@ -7,15 +7,13 @@
 .day-theme {
   --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #000; /* Color de enlaces para el tema de día */
-  /* Add more CSS variables for other styles you want to change */
+  --link-color: #000;
 }
 
 .night-theme {
   --background-color: #222222;
   --text-color: #ffffff;
-  --link-color: #fff; /* Color de enlaces para el tema de noche */
-  /* Add more CSS variables for other styles you want to change */
+  --link-color: #fff; 
 }
 
 body {
@@ -24,9 +22,23 @@ body {
 }
 
 a {
-  color: var(--link-color)!important; /* Aplicar color de enlaces según el tema */
+  color: var(--link-color)!important; 
 }
 
-footer {
-  color: var(--link-color)!important; /* Aplicar color de enlaces según el tema */
+ul {
+      background-color: var(--background-color)!important;
+      color: var(--link-color);
+}
+
+.card.m-3.mx-auto {
+  background-color: var(--background-color)!important;
+  color: var(--link-color)!important;
+}
+
+.col-md-4.mb-0.text-body-secondary {
+  color: var(--link-color)!important;
+}
+
+.nav-link.px-2.text-body-secondary {
+  color: var(--link-color)!important;
 }

@@ -30,16 +30,22 @@ const Header = ({ width, logo }) => {
                 Home
               </a>
             </li>
-            <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Temas
-          </a>
-          <ul className="dropdown-menu rounded-top-0 border-top-0">
-            <li><a className="dropdown-item" href="/web">Desarrollo Web</a></li>
-            <li><a className="dropdown-item" href="/life-style">Life Style</a></li>            
-            <li><a className="dropdown-item" href="/travel">Viajando</a></li>
-          </ul>
-          </li>
+            <li>
+              <a
+                className={`nav-link ${(active) => (active ? "active" : "")}`}
+                href="/web"
+              >
+                Desarrollo Web
+              </a>
+            </li>
+            <li>
+              <a
+                className={`nav-link ${(active) => (active ? "active" : "")}`}
+                href="/travel"
+              >
+                Viajando
+              </a>
+            </li>
             <li className="nav-item">
               <a
                 className={`nav-link ${(active) => (active ? "active" : "")}`}

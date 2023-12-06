@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const Card = ({ data, width }) => {
@@ -14,7 +15,7 @@ const Card = ({ data, width }) => {
               <strong>{data.subject}</strong>
             </p>
             <h5 className="card-title">{data.title}</h5>
-            <p className="card-text collapse">{data.content}</p>
+            <p className="card-text collapse">{data.intro}</p>
             <Link to={`/blog-post/${data.id}`}>leer mas</Link>
           </div>
         </div>
@@ -22,5 +23,17 @@ const Card = ({ data, width }) => {
     </div>
   );
 };
+
+Card.propTypes = {
+  data: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    subject: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+  width: PropTypes.number.isRequired,
+};
+
 
 export default Card;
