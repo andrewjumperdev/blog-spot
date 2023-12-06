@@ -30,6 +30,16 @@ ul {
       color: var(--link-color);
 }
 
+.navbar-toggler {
+  background-color: var(--background-color)!important;
+  color: var(--link-color)!important;
+}
+
+.bi.bi-brightness-low-fill {
+  background-color: var(--background-color)!important;
+  color: var(--link-color)!important;
+}
+
 .card.m-3.mx-auto {
   background-color: var(--background-color)!important;
   color: var(--link-color)!important;
