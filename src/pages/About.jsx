@@ -1,48 +1,87 @@
 import React from "react";
 
+
 const About = () => {
   return (
-    <div className="container "> 
-      <div className="row mb-5 align-items-center">
-        <div className="col-md-12 col-lg-6 px-5 d-flex justify-content-center">
+    <div className="container">
+      <div className="row mb-5 align-items-start">
+        <div className="col-md-12 col-lg-6 px-5 d-flex flex-column">
           <img
             src="./Foto_Andrew.png"
-            className="rounded-5 w-75"
+            className="rounded-5 w-75 float-start me-4"
             alt="Profile"
-          />
+          />{/*
+          <div className="container mt-4">
+            <div className="row">
+              <div className="col">
+              <p className="d-inline-flex gap-1">
+                <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i className="bi bi-instagram text-light"></i>
+                </a>
+              </p>
+              <div className="collapse" id="collapseExample">
+                <div className="card card-body">
+                  <a href="https://www.instagram.com/andrew_frcr/">
+                  <img className="img-thumbnail" src="https://i.ibb.co/p10NZC1/Capture-d-e-cran-2024-01-03-a-16-41-44.png" alt="Instagram Profile" />
+                  </a>                  
+                </div>
+              </div>
+              </div>
+              <div className="col">
+              <p className="d-inline-flex gap-1">
+                <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i className="bi bi-github text-light"></i>
+                </a>
+              </p>
+              <div className="collapse" id="collapseExample">
+                <div className="card card-body">
+                  <a href="https://github.com/andrewjumperdev">
+                  <img className="img-thumbnail" src="https://i.ibb.co/02kKQ8Z/Capture-d-e-cran-2024-01-03-a-16-46-08.png" alt="Instagram Profile" />
+                  </a>                  
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          */}
         </div>
         <div className="col-md-12 col-lg-6">
-          <p className="mt-5">
-            <span>¡Hola! Soy Andrew</span> un apasionado del mundo de la
-            tecnología y el desarrollo. Mi trayectoria comenzó cuando niño me
-            atrajo mucho todo lo que tiene que ver con computadoras, luego más
-            tarde estudié y obtuve mi certificación CCNA, lo que me brindó una
-            sólida base en redes y telecomunicaciones. Sin embargo, mi interés y
-            curiosidad por la programación me llevaron a explorar el apasionante
-            mundo del desarrollo web. <br />
-            Desde entonces, me he sumergido en el stack MERN (MongoDB,
-            Express.js, React.js y Node.js), y me he convertido en un
-            desarrollador experimentado en la creación de aplicaciones web
-            modernas y eficientes. A través de JavaScript, he logrado construir
-            interfaces interactivas y dinámicas que ofrecen una experiencia de
-            usuario excepcional. <br />
-            Además, mi versatilidad en el desarrollo se extiende al lenguaje
-            Python, lo que me ha permitido abordar proyectos desde diferentes
-            perspectivas y resolver problemas de manera innovadora. <br />
-            A lo largo de mi trayectoria, también he adquirido conocimientos
-            sólidos en bases de datos relacionales y SQL, incluyendo MySQL y SQL
-            Server. Esto me ha permitido diseñar y optimizar estructuras de
-            datos, realizar consultas complejas y asegurar una gestión eficiente
-            de la información en proyectos diversos. <br />
-            La pasión por compartir mis conocimientos y ayudar a otros a crecer
-            en el mundo del desarrollo me ha llevado a crear este blog. Mi
-            objetivo es ofrecer tutoriales, guías y consejos prácticos para que
-            otros entusiastas de la programación puedan adentrarse en el mundo
-            del desarrollo. Espero que este espacio sea de mucho agrado y que
-            juntos podamos seguir aprendiendo y creciendo en esta emocionante
-            industria tecnológica. <br />
-            ¡Bienvenidos a este viaje de conocimiento y desarrollo!
-          </p>
+        <div className="jumbotron">
+            <h1 className="display-4">Biografía de Andrew Alfaro</h1>
+            <p className="lead">¡Bienvenidos a mi mundo! Soy Andrew Alfaro, nací el 3 de noviembre de 1994 en Costa Rica y actualmente resido en Francia. Mi vida ha sido un fascinante viaje marcado por la determinación, el aprendizaje continuo y una pasión ardiente por el desarrollo web, el emprendimiento y las disciplinas físicas.</p>
+
+            <h2>Infancia y Formación</h2>
+            <p>Mi infancia se tejió en la encantadora zona de Tres Ríos, Cartago. Mis primeros pasos académicos los di en la Escuela Central de Tres Ríos y continué mi educación hasta el 3er ciclo en el Colegio Mario Quirós Sasso. Mi bachillerato lo obtuve por madurez en el MEP. Mi interés por la lengua inglesa me llevó al Instituto Nacional de Aprendizaje en Costa Rica, donde me sumergí en el estudio del idioma. Posteriormente, tomé el rumbo de la informática, obteniendo una formación en CCNA.</p>
+
+            <h2>Desarrollo Web y Migración a Francia</h2>
+            <p>Mi camino en el desarrollo web inició de forma empírica, explorando las complejidades del código. Con conocimientos sólidos, decidí migrar a Francia en busca de nuevas oportunidades. En OpenClassroom, completé una formación integral en desarrollo web full stack, consolidando mi expertise.</p>
+
+            <h2>Emprendimiento y Experiencia Profesional</h2>
+            <p>Ingresé al mundo del emprendimiento con Aquafun, un proyecto dedicado a eventos acuáticos y actividades recreativas para el turismo. Mi papel abarcó desde la organización y marketing hasta el desarrollo web y estrategias comerciales.</p>
+
+            <h2>Proyectos Destacados</h2>
+            <ul>
+              <li>En Bobochic, aumenté las ventas con un robot de monitoreo y análisis de productos en MarketPlaces.</li>
+              <li>Fundé Aquafun, desarrollando una API para gestionar la base de datos desde diversas aplicaciones.</li>
+              <li>En Wanhao France, implementé soluciones para agilizar procesos y versioné archivos para un dispositivo Raspberry Pi.</li>
+            </ul>
+
+            <h2>Vida Personal</h2>
+            <p>
+              Fuera del ámbito profesional, me sumerjo apasionadamente en el mundo del deporte, una pasión que ha estado presente en mi vida desde la infancia. Desde mis primeros días jugando al fútbol hasta mis actuales compromisos con disciplinas tan diversas como las artes marciales mixtas (MMA), el gimnasio y el Parkour, he tejido una conexión profunda con el movimiento y la actividad física.
+              <br />
+              Mi dedicación al MMA, un viaje que ya abarca 15 años, ha sido una fuente constante de desafíos y logros. No solo es una disciplina que practico rigurosamente, sino que también la considero una forma de arte que fusiona la fuerza, la estrategia y la resistencia. En mi trayectoria, he explorado diversos estilos de combate, refinando mi técnica y adoptando un enfoque integral hacia el acondicionamiento físico.
+              <br />
+              Además, mi compromiso con el gimnasio no se limita simplemente a levantar pesas. Como amante del movimiento funcional, diseño rutinas y planes de ejercicios que no solo fortalecen el cuerpo, sino que también promueven la flexibilidad y la resistencia. El Powerlifting es una de mis disciplinas actuales, donde busco superar mis límites y alcanzar nuevas metas constantemente.
+              <br />
+              El Parkour, esa fascinante disciplina que adopté a la edad de 14 años, ha sido una parte integral de mi vida. Desde entrenar con amigos en mi ciudad hasta aliarnos en proyectos con municipalidades y asociaciones, hemos integrado esta pasión en la enseñanza de la educación física. Como instructor, he contribuido al desarrollo del Parkour en mi comunidad, participando activamente en proyectos educativos y fundando un gimnasio dedicado a esta disciplina.
+              <br />
+              En resumen, mi compromiso con el deporte no solo se limita a la competición y el entrenamiento personal. Lo veo como una oportunidad para explorar los límites del cuerpo y la mente, y también como una herramienta valiosa para enseñar y motivar a otros. ¡Cada experiencia en el ring, en el gimnasio y en los tejados urbanos ha dejado una huella indeleble en mi vida!
+            </p>
+
+            <h2>Mi Blog es: </h2>
+            <p>Es el espacio donde comparto mi conocimiento y perspectivas. ¡Acompáñame en este viaje donde la pasión, la tecnología y la determinación se entrelazan para formar mi historia! ¡Bienvenidos a mi mundo, bienvenido a mi Blog-Spot!</p>
+          </div>
         </div>
       </div>
       <div className="row">
@@ -53,7 +92,7 @@ const About = () => {
             eficientes y destacar en el mundo digital, no dudes en contactarme.
             Con habilidades sólidas en el stack MERN, experiencia en JavaScript
             y Python, estoy listo para colaborar en proyectos ambiciosos y crear
-            soluciones innovadoras.<br/> ¡Contáctame ahora y llevemos tus ideas al
+            soluciones innovadoras.<br /> ¡Contáctame ahora y llevemos tus ideas al
             siguiente nivel!
           </p>
           <a href="/contact" className="btn btn-primary">
@@ -63,6 +102,7 @@ const About = () => {
       </div>
     </div>
   );
+
 };
 
 export default About;

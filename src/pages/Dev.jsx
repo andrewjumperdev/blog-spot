@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import CardMedia from "../components/CardMedia";
-import Header from "../components/Header";
-import db from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
+import Header from "../components/Header";
+import CardMedia from "../components/CardMedia";
 
-const Home = () => {
+const DevPage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -43,4 +43,5 @@ const Home = () => {
   );
 };
 
-export default Home;
+
+export default DevPage;

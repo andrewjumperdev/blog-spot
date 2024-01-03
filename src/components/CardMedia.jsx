@@ -11,11 +11,7 @@ const Card = ({ data, width }) => {
         </div>
         <div className="col">
           <div className="card-body">
-            <p>
-              <strong>{data.subject}</strong>
-            </p>
             <h5 className="card-title">{data.title}</h5>
-            <p className="card-text collapse">{data.intro}</p>
             <Link to={`/blog-post/${data.id}`}>leer mas</Link>
           </div>
         </div>

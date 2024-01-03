@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ThemeProvider } from "./ThemeContext";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
 
 const logo = "./logo-blog.png";
 
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 
   return (
       <div className={(isNightMode ? "night-mode" : "day-mode")}>
-        <Header
+        <Navigation
           logo={logo}
           width={90}
           isNightMode={isNightMode}

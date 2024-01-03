@@ -3,70 +3,17 @@ import ThemeSwitcher from "./ToggleButton";
 
 const Header = ({ width, logo }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <img src={logo} alt="logo" width={`${width}rem`} />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a
-                className={`nav-link ${(active) => (active ? "active" : "")}`}
-                aria-current="page"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className={`nav-link ${(active) => (active ? "active" : "")}`}
-                href="/web"
-              >
-                Desarrollo Web
-              </a>
-            </li>
-            <li>
-              <a
-                className={`nav-link ${(active) => (active ? "active" : "")}`}
-                href="/travel"
-              >
-                Viajando
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={`nav-link ${(active) => (active ? "active" : "")}`}
-                href="/about"
-              >
-                Acerca de
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={`nav-link ${(active) => (active ? "active" : "")}`}
-                href="/contact"
-              >
-                Contacto
-              </a>
-            </li>
-          </ul>
+    <>
+      <div className="container">
+        <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+          <div className="col-lg-6 px-0">
+            <h1 className="display-4 fst-italic">Descubre un Mundo de Posibilidades: Desarrollo Web, Viajes y Ejercicios Prácticos</h1>
+            <p className="lead my-3">Explora los rincones del desarrollo web, sumérgete en fascinantes relatos de viajes y desafía tus habilidades con nuestros ejercicios prácticos. Aquí encontrarás guías, consejos y contenido valioso para inspirarte y aprender.</p>
+            <p className="lead mb-0"><a href="/about" className="text-body-emphasis fw-bold">Conoce más sobre mí...</a></p>
+          </div>
         </div>
-        <ThemeSwitcher />
       </div>
-    </nav>
+    </>
   );
 };
 
