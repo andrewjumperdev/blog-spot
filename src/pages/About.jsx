@@ -5,48 +5,17 @@ const About = () => {
   return (
     <div className="container">
       <div className="row mb-5 align-items-start">
-        <div className="col-md-12 col-lg-6 px-5 d-flex flex-column">
-          <img
-            src="./Foto_Andrew.png"
-            className="rounded-5 w-75 float-start me-4"
-            alt="Profile"
-          />{/*
-          <div className="container mt-4">
-            <div className="row">
-              <div className="col">
-              <p className="d-inline-flex gap-1">
-                <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i className="bi bi-instagram text-light"></i>
-                </a>
-              </p>
-              <div className="collapse" id="collapseExample">
-                <div className="card card-body">
-                  <a href="https://www.instagram.com/andrew_frcr/">
-                  <img className="img-thumbnail" src="https://i.ibb.co/p10NZC1/Capture-d-e-cran-2024-01-03-a-16-41-44.png" alt="Instagram Profile" />
-                  </a>                  
-                </div>
-              </div>
-              </div>
-              <div className="col">
-              <p className="d-inline-flex gap-1">
-                <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <i className="bi bi-github text-light"></i>
-                </a>
-              </p>
-              <div className="collapse" id="collapseExample">
-                <div className="card card-body">
-                  <a href="https://github.com/andrewjumperdev">
-                  <img className="img-thumbnail" src="https://i.ibb.co/02kKQ8Z/Capture-d-e-cran-2024-01-03-a-16-46-08.png" alt="Instagram Profile" />
-                  </a>                  
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          */}
-        </div>
-        <div className="col-md-12 col-lg-6">
+        <div className="col">
         <div className="jumbotron">
+          <div className="row">
+            <div className="col">
+                <img
+                src="./Foto_Andrew.png"
+                className="rounded-5 w-75 float-start me-4"
+                alt="Profile"
+              />
+            </div>
+            <div className="col">
             <h1 className="display-4">Biografía de Andrew Alfaro</h1>
             <p className="lead">¡Bienvenidos a mi mundo! Soy Andrew Alfaro, nací el 3 de noviembre de 1994 en Costa Rica y actualmente resido en Francia. Mi vida ha sido un fascinante viaje marcado por la determinación, el aprendizaje continuo y una pasión ardiente por el desarrollo web, el emprendimiento y las disciplinas físicas.</p>
 
@@ -58,8 +27,11 @@ const About = () => {
 
             <h2>Emprendimiento y Experiencia Profesional</h2>
             <p>Ingresé al mundo del emprendimiento con Aquafun, un proyecto dedicado a eventos acuáticos y actividades recreativas para el turismo. Mi papel abarcó desde la organización y marketing hasta el desarrollo web y estrategias comerciales.</p>
-
-            <h2>Proyectos Destacados</h2>
+          </div>
+            </div>
+            <div className="row">
+              <div className="col">
+              <h2>Proyectos Destacados</h2>
             <ul>
               <li>En Bobochic, aumenté las ventas con un robot de monitoreo y análisis de productos en MarketPlaces.</li>
               <li>Fundé Aquafun, desarrollando una API para gestionar la base de datos desde diversas aplicaciones.</li>
@@ -78,9 +50,15 @@ const About = () => {
               <br />
               En resumen, mi compromiso con el deporte no solo se limita a la competición y el entrenamiento personal. Lo veo como una oportunidad para explorar los límites del cuerpo y la mente, y también como una herramienta valiosa para enseñar y motivar a otros. ¡Cada experiencia en el ring, en el gimnasio y en los tejados urbanos ha dejado una huella indeleble en mi vida!
             </p>
-
-            <h2>Mi Blog es: </h2>
+              </div>
+            </div>
+           
+            <div className="row border-top  d-flex justify-content-center">
+              <div className="col-8 border-top p-4">
+            <h2>De que trata mi blog: </h2>
             <p>Es el espacio donde comparto mi conocimiento y perspectivas. ¡Acompáñame en este viaje donde la pasión, la tecnología y la determinación se entrelazan para formar mi historia! ¡Bienvenidos a mi mundo, bienvenido a mi Blog-Spot!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
