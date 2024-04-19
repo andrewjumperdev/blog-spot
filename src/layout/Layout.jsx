@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { ThemeProvider } from "./ThemeContext";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 

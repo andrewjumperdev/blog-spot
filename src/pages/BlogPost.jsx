@@ -12,7 +12,6 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Intentar buscar en Firestore
         const collectionRef = collection(db, "posts");
         const snapshot = await getDocs(collectionRef);
 

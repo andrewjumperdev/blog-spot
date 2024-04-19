@@ -6,7 +6,7 @@ import CardMedia from "../components/CardMedia";
 
 const DevPage = () => {
   const [data, setData] = useState([]);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -25,16 +25,24 @@ const DevPage = () => {
     };
 
     fetchData();
-  }, []); // No hay dependencias, se ejecutará solo al montar el componente
+  }, []);
+
 
   return (
     <>
-      <Header />
+      <Header 
+        coverTitle={'Tips, Tutoriales y Ejercicios: Desarrollo Web'}
+        coverText={`Aca encontraras un conjunto de recursos diseñados para proporcionar orientación, 
+                    instrucción y práctica en el ámbito del desarrollo web, 
+                    abordando temas diversos como HTML, CSS, JavaScript, frameworks 
+                    y tecnologías relacionadas.`}   
+        coverImage={''}                  
+      />
       <div className="container">
         <div className="row">
           <div className="d-flex justify-content-between align-content-start flex-wrap">
-            {data.map((item) => (
-              <CardMedia key={item.id} data={item} width={18} />
+          {data.map((item) => (              
+              item.intro && <CardMedia key={item.id} data={item} width={18} />
             ))}
           </div>
         </div>

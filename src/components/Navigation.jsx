@@ -1,5 +1,6 @@
 import ThemeSwitcher from "./ToggleButton";
 
+// eslint-disable-next-line react/prop-types
 const Navigation = ({ width, logo }) => {
   return (
 
@@ -32,7 +33,7 @@ const Navigation = ({ width, logo }) => {
       </li>
       <li>
         <a
-          className={`nav-link disabled ${(active) => (active ? "active" : "")}`}
+          className={`nav-link ${(active) => (active ? "active" : "")}`}
           href="/dev"
         >
           Desarrollo Web
@@ -40,7 +41,7 @@ const Navigation = ({ width, logo }) => {
       </li>
       <li>
         <a
-          className={`nav-link disabled ${(active) => (active ? "active" : "")}`}
+          className={`nav-link ${(active) => (active ? "active" : "")}`}
           href="/travel"
 
         >

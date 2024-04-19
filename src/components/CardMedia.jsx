@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
@@ -13,6 +12,7 @@ const Card = ({ data, width }) => {
           <div className="card-body">
             <h5 className="card-title">{data.title}</h5>
             <Link to={`/blog-post/${data.id}`}>leer mas</Link>
+            <p className="card-text"><small className="text-body-secondary">{data.date}</small></p>
           </div>
         </div>
       </div>
@@ -25,8 +25,9 @@ Card.propTypes = {
     img: PropTypes.string.isRequired,
     subject: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    intro: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    intro: PropTypes.string,
+    id: PropTypes.any.isRequired,
+    date: PropTypes.any
   }).isRequired,
   width: PropTypes.number.isRequired,
 };
