@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../firebase";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -48,6 +50,17 @@ const BlogPost = () => {
 
   return (
     <article className="container">
+      {postItem.video && (
+        <div className="video-container">
+          <video controls>
+            <source src={postItem.video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+      <div className="row">
+        <div className="col"></div>
+      </div>
       <div className="row">
         <div className="col">
           <h1>{postItem.title}</h1>

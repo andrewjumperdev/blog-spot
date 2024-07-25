@@ -4,6 +4,7 @@ const Header = ({ coverImage, coverTitle, coverText }) => {
     backgroundImage: `url(${coverImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
   };
 
   return (

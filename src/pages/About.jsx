@@ -4,14 +4,14 @@ import React from "react";
 const About = () => {
   return (
     <div className="container">
-      <div className="row mb-5 align-items-start">
+      <div className="row mx-sm-2 mb-5 align-items-start">
         <div className="col">
         <div className="jumbotron">
           <div className="row">
-            <div className="col">
+            <div className="col-sm-12 col-md-6 col-lg-4">
                 <img
                 src="./Foto_Andrew.png"
-                className="rounded-5 w-75 float-start me-4"
+                className="rounded-5 w-100 float-start me-4"
                 alt="Profile"
               />
             </div>
@@ -54,7 +54,7 @@ const About = () => {
             </div>
            
             <div className="row border-top  d-flex justify-content-center">
-              <div className="col-8 border-top p-4">
+              <div className="col-sm-12 border-top p-4">
             <h2>De que trata mi blog: </h2>
             <p>Es el espacio donde comparto mi conocimiento y perspectivas. ¡Acompáñame en este viaje donde la pasión, la tecnología y la determinación se entrelazan para formar mi historia! ¡Bienvenidos a mi mundo, bienvenido a mi Blog-Spot!</p>
               </div>

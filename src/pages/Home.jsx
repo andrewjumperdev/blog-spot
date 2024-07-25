@@ -29,12 +29,9 @@ const Home = () => {
   return (
     <>
       <Header
-              coverTitle={'Descubre un Mundo de Posibilidades: Desarrollo Web, Viajes y Fitness'}
-              coverText={`Explora los rincones del desarrollo web, sumérgete en fascinantes 
-                          relatos de viajes y desafía tus habilidades con nuestros ejercicios
-                           prácticos. Aquí encontrarás guías, consejos y contenido valioso 
-                           para inspirarte y aprender.`}   
-              coverImage={''}    
+              coverTitle={'Bienvenido al Blog de Desarrollo Web de Andrew Alfaro'}
+              coverText={`¡Descubre el mundo del desarrollo web con Andrew Alfaro, un experto desarrollador Full-Stack con más de 3 años de experiencia! En este blog, te ofrecemos recursos valiosos y conocimientos profundos en desarrollo web, automatización de procesos y gestión de API.`}   
+              coverImage={'https://i.ibb.co/f9Y44QR/desarrollo-web.png'}    
       />
       <div className="container">
         <div className="row">
